@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: "Exo", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(5px);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+}
+
+li:active {
+  transform: translateY(5px);
+}
+
+section {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+}
+
+article {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+}
+
+.logo {
+  width: 10vw;
+  min-width: 70px;
+  max-width: 100px;
+  height: auto;
+}
+
+.logoFooter {
+  width: 10vw;
+  min-width: 15px;
+  max-width: 40px;
+  height: auto;
+}
+
+.carouselImg {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 50vh;
+}
+
+.portada {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  max-height: 69vh;
+}
+
+.mapa {
+  height: 100vh;
+}
+
+.fondoRedes {
+  background-color: #b3cdd1;
+  background-image: linear-gradient(315deg, #b3cdd1 0%, #9fa4c4 74%);
+}
+
+/* Diseño Cards */
+.card {
+  display: inline-block;
+  position: relative;
+  width: 350px;
+  min-width: 350px;
+  height: 350px;
+  border-radius: 30px;
+  overflow:hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+.card-profile-img {
+  width: 100%;
+  max-height: 210px;
+  max-width: 210px;
+  padding: 5px;
+}
+
+.card-description-bk {
+  background-image: linear-gradient(315deg, #7fcec5 0%, #14557b 74%);
+  background-size: 400% 400%;
+  animation: gradientAnim 15s ease infinite;
+  border-radius: 30px;
+  position: absolute;
+  top: 55%;
+  left: -5px;
+  height: 65%;
+  width: 108%;
+  transform: skew(19deg, -9deg);
+}
+
+.card-description {
+  position: absolute;
+  color: #fff;
+  font-weight: 900;
+  left: 150px;
+  bottom: 26%;
+}
+
+.card-btn {
+  position: absolute;
+  color: #fff;
+  right: 30px;
+  bottom: 10%;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+}
+
+.card-btn a {
+  color: #fff;
+}
+
+.card-date {
+  position: absolute;
+  color: #fff;
+  left: 30px;
+  bottom: 10%;
+}
+/* Fin Diseño Cards */
+
+/* Modal Carrito */
+
+.modal-contenedor {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 5;
+}
+
+.modal-carrito {
+  position: relative;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  min-width: 600px;
+  padding: 20px;
+  margin-top: -100%;
+  transition: all 0.5s;
+}
+
+.modal-active .modal-carrito {
+  margin-top: 0;
+}
+.modal-carrito h3 {
+  padding-bottom: 5px;
+}
+
+.modal-carrito #carritoCerrar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  border: none;
+  background-color: white;
+}
+
+.modal-carrito #carritoCerrar:hover {
+  cursor: pointer;
+}
+
+.modal-carrito #carritoCerrar:focus {
+  outline: none;
+}
+
+.modal-carrito .precioProducto {
+  padding-top: 10px;
+}
+
+.productoEnCarrito {
+  border-left: 5px solid rgb(167, 73, 190);
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+  border-right: 5px solid rgb(167, 73, 190);
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productoEnCarrito:hover {
+  border-left: 5px solid rgb(225, 76, 65);
+}
+
+.boton-eliminar {
+  background-color: white;
+  color: red;
+  border: none;
+  font-size: 20px;
+}
+
+.boton-eliminar:hover {
+  cursor: pointer;
+}
+
+.boton-eliminar:focus {
+  outline: none;
+}
+
+/* Fin Modal Carrito */
+
+.transicion {
+  transition: all 500ms;
+}
+.transicion:hover {
+  border-radius: 30px;
+  background-color: #d3d3d3;
+  transition: 0.2s;
+  transform: scale(1.175);
+}
+
+.gradientAnim {
+  background-size: 400% 400%;
+  animation: gradientAnim 15s ease infinite;
+}
+.gradientAnim .fadeAnim {
+  animation-name: fade;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+}
+.gradientAnim .fadeAnim .voltearLogo {
+  animation-name: voltear;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+
+.botonPagar {
+  margin: auto;
+}
+
+.btnTrans {
+  cursor: pointer;
+}
+
+.btnTrans:active {
+  transform: translateY(5px);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+@keyframes voltear {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@keyframes gradientAnim {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

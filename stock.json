@@ -1,0 +1,11 @@
+[
+{"id":1,"nombre":"ASUS RTX 3090","categoria":"Placas de Video","precio":503500,"img":"../assets/img/asus3090.jpg"},
+{"id":2,"nombre":"Asus ROG Strix 32","categoria":"Monitores","precio":172000,"img":"../assets/img/monitorlogo.png"},
+{"id":3,"nombre":"Apple Macbook Air","categoria":"Notebooks","precio":197100,"img":"../assets/img/notebooklogo.png"},
+{"id":4,"nombre":"PNY RTX 3080 Ti","categoria":"Placas de Video","precio":410000,"img":"../assets/img/pny3080ti.jpg"},
+{"id":5,"nombre":"MSI RTX 3070","categoria":"Placas de Video","precio":175000,"img":"../assets/img/msi3070.png"},
+{"id":6,"nombre":"LG LCD 49 UltraWide","categoria":"Monitores","precio":349850,"img":"../assets/img/monitorlg49.jpg"},
+{"id":7,"nombre":"Samsung Curvo 34","categoria":"Monitores","precio":126300,"img":"../assets/img/samsung34.jpg"},
+{"id":8,"nombre":"Asus ZenBook i7","categoria":"Notebooks","precio":290000,"img":"../assets/img/asuszenbook.jpg"},
+{"id":9,"nombre":"Acer NITRO 5 i5","categoria":"Notebooks","precio":180000,"img":"../assets/img/acerNitro.jpg"}
+]
